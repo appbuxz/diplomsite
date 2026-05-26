@@ -2,7 +2,8 @@
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'Segoe UI',Arial,sans-serif;color:var(--text);background:radial-gradient(circle at top,#ecfff3,var(--bg));line-height:1.55}
 .container{max-width:1120px;margin:0 auto;padding:0 18px}
 
-.site-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(6px);box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.site-header{position:sticky;top:0;z-index:20;backdrop-filter:blur(6px);box-shadow:0 8px 24px rgba(0,0,0,.12);transition:transform .35s ease, box-shadow .35s ease}
+.site-header.header-hidden{transform:translateY(-115%);box-shadow:none}
 .topbar{display:flex;align-items:center;justify-content:space-between;padding:12px 0;position:relative}
 .topbar::before{content:"";position:absolute;inset:-10px -18px;border-radius:0 0 20px 20px;background:
 linear-gradient(rgba(11,35,22,.45),rgba(11,35,22,.45)),

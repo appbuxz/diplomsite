@@ -2,6 +2,19 @@ const menuBtn = document.getElementById('menu-toggle');
 const nav = document.getElementById('main-nav');
 if (menuBtn && nav) menuBtn.addEventListener('click', () => nav.classList.toggle('open'));
 
+let lastY = window.scrollY;
+const header = document.querySelector('.site-header');
+window.addEventListener('scroll', () => {
+  if (!header) return;
+  const currentY = window.scrollY;
+  if (currentY > lastY && currentY > 80) {
+    header.classList.add('header-hidden');
+  } else {
+    header.classList.remove('header-hidden');
+  }
+  lastY = currentY;
+});
+
 const bookingForm = document.getElementById('booking-form');
 if (bookingForm) {
   bookingForm.addEventListener('submit', (e) => {
