@@ -1,13 +1,9 @@
-:root { --bg:#f4f6fb; --text:#1f2937; --primary:#2563eb; --card:#fff; }
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
-header{background:var(--primary);color:#fff;padding:1rem}
-nav{display:flex;gap:1rem;flex-wrap:wrap}
-nav a{color:#fff;text-decoration:none;font-weight:600}
-main{max-width:900px;margin:2rem auto;padding:0 1rem}
-.card{background:var(--card);border-radius:12px;box-shadow:0 8px 25px rgba(0,0,0,.08);padding:1rem 1.25rem;margin-bottom:1rem}
-form{display:grid;gap:.75rem}
-input,textarea,button{font:inherit;padding:.7rem;border-radius:8px;border:1px solid #d1d5db}
-button{border:none;background:var(--primary);color:#fff;cursor:pointer}
-.muted,small{color:#6b7280}
-code{background:#eef2ff;padding:.1rem .35rem;border-radius:6px}
+:root{--bg:#f2f8f5;--text:#1f2937;--primary:#2e7d32;--accent:#4fc3f7;--card:#fff}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:var(--text)}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}.site-header{background:var(--primary);color:#fff;position:sticky;top:0}.topbar{display:flex;align-items:center;gap:1rem;padding:1rem 0}.brand{font-weight:700}
+.main-nav{display:flex;gap:.8rem;flex-wrap:wrap}.main-nav a{color:#fff;text-decoration:none}.menu-toggle{display:none;border:0;background:#fff;color:var(--primary);border-radius:8px;padding:.4rem .7rem}
+.hero{background:linear-gradient(120deg,var(--primary),var(--accent));color:#fff;padding:3rem 0}.btn{display:inline-block;background:var(--primary);color:#fff;border:0;border-radius:8px;padding:.7rem 1rem;text-decoration:none;cursor:pointer}
+.section{padding:2rem 0}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}.stack{display:grid;gap:1rem}
+.card{background:var(--card);border-radius:12px;padding:1rem;box-shadow:0 6px 18px rgba(0,0,0,.08)}form{display:grid;gap:.75rem}input,textarea{padding:.65rem;border:1px solid #d1d5db;border-radius:8px}
+.slider img{width:100%;border-radius:8px;margin-bottom:.6rem}
+@media (max-width: 768px){.grid-3,.grid-2{grid-template-columns:1fr}.menu-toggle{display:block}.main-nav{display:none;flex-direction:column;width:100%}.main-nav.open{display:flex}}

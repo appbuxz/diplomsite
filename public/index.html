@@ -3,29 +3,52 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Главная | DiplomSite</title>
+  <meta name="description" content="База отдыха Семейный очаг в Актобе: номера, услуги, галерея и онлайн-бронирование." />
+  <title>Семейный очаг — база отдыха</title>
   <link rel="stylesheet" href="/css/styles.css" />
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="/">Главная</a>
-      <a href="/about">О проекте</a>
-      <a href="/portfolio">Портфолио</a>
-      <a href="/contacts">Контакты</a>
-    </nav>
+  <header class="site-header">
+    <div class="container topbar">
+      <div class="brand">Семейный очаг</div>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Открыть меню">☰</button>
+      <nav id="main-nav" class="main-nav">
+        <a href="/">Главная</a>
+        <a href="/about">О нас</a>
+        <a href="/rooms">Номера</a>
+        <a href="/services">Услуги</a>
+        <a href="/gallery">Галерея</a>
+        <a href="/booking">Бронирование</a>
+        <a href="/contacts">Контакты</a>
+      </nav>
+    </div>
   </header>
+
   <main>
-    <section class="card">
-      <h1>Тема дипломной работы: Многостраничный web-сайт</h1>
-      <p>Сайт демонстрирует связку фронтенд + бэкенд + БД SQLite, включая форму обратной связи и API.</p>
+    <section class="hero">
+      <div class="container">
+        <h1>Отдых на природе для всей семьи</h1>
+        <p>Комфортные домики, чистый воздух, бассейн, баня и уютная атмосфера в базе отдыха «Семейный очаг».</p>
+        <a class="btn" href="/booking">Забронировать сейчас</a>
+      </div>
     </section>
-    <section class="card">
-      <h2>Последние сообщения</h2>
-      <p class="muted">Данные загружаются из SQLite через endpoint <code>/api/messages</code>.</p>
-      <div id="messages">Загрузка...</div>
+
+    <section class="container section">
+      <h2>Наши преимущества</h2>
+      <div class="grid-3">
+        <article class="card"><h3>Семейный формат</h3><p>Безопасная территория, детская площадка и спокойная атмосфера.</p></article>
+        <article class="card"><h3>Удобное размещение</h3><p>Номера и домики разных категорий с актуальными ценами.</p></article>
+        <article class="card"><h3>Онлайн-заявка</h3><p>Оставьте бронь через сайт — ответ администратора в кратчайшее время.</p></article>
+      </div>
+    </section>
+
+    <section class="container section">
+      <h2>Последние обращения</h2>
+      <div id="messages" class="stack">Загрузка...</div>
     </section>
   </main>
+
+  <script src="/js/site.js"></script>
   <script src="/js/messages.js"></script>
 </body>
 </html>

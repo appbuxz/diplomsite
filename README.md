@@ -1,25 +1,23 @@
-# DiplomSite
+# Дипломный проект: сайт базы отдыха «Семейный очаг»
 
-Многостраничный сайт для дипломной работы.
+## Разделы сайта
+- Главная
+- О нас
+- Номера
+- Услуги
+- Галерея
+- Бронирование
+- Контакты
 
 ## Технологии
+- HTML/CSS/JavaScript
 - Node.js + Express
 - SQLite
-- HTML/CSS/JavaScript
-
-## Страницы
-- `/` — главная
-- `/about` — о проекте
-- `/portfolio` — портфолио
-- `/contacts` — форма обратной связи
-
-## API
-- `GET /api/health`
-- `GET /api/messages`
-- `POST /api/messages` (name, email, message)
 
 ## Запуск
 ```bash
 npm install
 npm start
 ```
+
+Сайт откроется на `http://localhost:3000`.
