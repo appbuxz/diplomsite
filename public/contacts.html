@@ -11,6 +11,7 @@
     <nav>
       <a href="/">Главная</a>
       <a href="/about">О проекте</a>
+      <a href="/portfolio">Портфолио</a>
       <a href="/contacts">Контакты</a>
     </nav>
   </header>
@@ -18,12 +19,12 @@
     <section class="card">
       <h1>Форма обратной связи</h1>
       <form id="contact-form">
-        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="text" name="name" placeholder="Ваше имя" maxlength="120" required />
         <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
+        <textarea name="message" rows="4" placeholder="Сообщение" maxlength="2000" required></textarea>
         <button type="submit">Отправить</button>
       </form>
-      <small id="status"></small>
+      <small id="status" class="muted"></small>
     </section>
   </main>
   <script src="/js/contact-form.js"></script>
