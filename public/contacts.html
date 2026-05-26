@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Контакты | DiplomSite</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="/">Главная</a>
+      <a href="/about">О проекте</a>
+      <a href="/contacts">Контакты</a>
+    </nav>
+  </header>
+  <main>
+    <section class="card">
+      <h1>Форма обратной связи</h1>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Ваше имя" required />
+        <input type="email" name="email" placeholder="Email" required />
+        <textarea name="message" rows="4" placeholder="Сообщение" required></textarea>
+        <button type="submit">Отправить</button>
+      </form>
+      <small id="status"></small>
+    </section>
+  </main>
+  <script src="/js/contact-form.js"></script>
+</body>
+</html>

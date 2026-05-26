@@ -1,0 +1,52 @@
+:root {
+  --bg: #f4f6fb;
+  --text: #1f2937;
+  --primary: #2563eb;
+  --card: #ffffff;
+}
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+header {
+  background: var(--primary);
+  color: white;
+  padding: 1rem;
+}
+nav a {
+  color: white;
+  margin-right: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,.08);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+form {
+  display: grid;
+  gap: .75rem;
+}
+input, textarea, button {
+  font: inherit;
+  padding: .7rem;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+button {
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+}
+small { color: #6b7280; }
